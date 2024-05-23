@@ -57,3 +57,20 @@ $(function() {
         $('#endDate').val(start.format('DD/MM/YYYY'));
     });
 });
+
+const ruanganText = document.querySelector(".title-text .ruangan");
+const ruanganSection = document.querySelector("section.ruangan");
+const ruanganBtn = document.querySelector("label.ruangan");
+const barangBtn = document.querySelector("label.barang");
+
+barangBtn.onclick = (()=>{
+    ruanganSection.style.marginLeft = "-50%";
+    ruanganText.style.marginLeft = "-50%";
+  });
+ruanganBtn.onclick = (()=>{
+    ruanganSection.style.marginLeft = "0%";
+    ruanganText.style.marginLeft = "0%";
+});  
+window.onload = (()=>{
+    ruanganBtn.cl
+});

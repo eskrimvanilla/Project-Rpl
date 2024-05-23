@@ -59,10 +59,11 @@ input[type=text]::placeholder,input[type=password]::placeholder, input[type=emai
 }
 
 .txt_field img,
-.txt_box img{
+.txt_box img, .txt_field ion-icon{
     position: absolute;
     right: 15px;
     cursor: pointer;
+    width: 30px;
 }
 
 form .txt_field input, form .txt_box input{

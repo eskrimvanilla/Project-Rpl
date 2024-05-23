@@ -24,166 +24,323 @@
    <title>Home</title>
 </head>
 <body style="background-color: rgb(10,5,59) !important;">
-<nav class="navbar">
-    <div class="tulisan">
-        <h1 class="logo"><a href="/index.html">
-          <span style="background: url(https://cdn.textures4photoshop.com/tex/thumbs/seamless-galaxy-with-stars-texture-for-photoshop-thumb48.jpg) no-repeat center center;
-            -webkit-background-clip: text; -webkit-text-stroke: 0.5px #fff;
-            color: transparent; background-size: cover;">KOM</span>Space</span>
-        </a></h1>
-        <ul class="ms-auto" style="list-style-type: none;">
-            <li>
-                <a href="ruangan.html">List Ruangan</a>
-            </li>
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;            
-            <li>
-                <a href="barang.html">List Barang</a>
-            </li>
-            &nbsp;&nbsp;&nbsp;            
-            &nbsp;&nbsp;&nbsp;
-            <li href="">
-                <a href="data_pinjam_ruang.html">Form Peminjaman</a>
-            </li>
-        </ul>
+    <nav class="navbar">
+        <div class="tulisan">
+           <h1 class="logo"><a href="/index.html">
+              <span style="background: url(https://cdn.textures4photoshop.com/tex/thumbs/seamless-galaxy-with-stars-texture-for-photoshop-thumb48.jpg) no-repeat center center;
+                -webkit-background-clip: text; -webkit-text-stroke: 0.5px #fff;
+                color: transparent; background-size: cover;">KOM</span>Space</span>
+            </a></h1>
+            <div class="container d-flex">
+                <ul class="ms-auto" style="list-style-type: none;">
+                    <li>
+                        <a href="ruangan.html">List Ruangan</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;            
+                    <li>
+                        <a href="barang.html">List Barang</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;            
+                    &nbsp;&nbsp;&nbsp;
+                    <li href="">
+                        <a href="data_pinjam_ruang.html">Form Peminjaman</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;            
+                    &nbsp;&nbsp;&nbsp;
+                    <li href="">
+                        <a href="logout" class="d-flex align-items-center"><ion-icon name="log-out-outline" style="font-size: 32px;"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+      </nav>
+<div class="wrapper">
+    <div class="title-text">
+        <h1 class="text align-middle title ruangan">Peminjaman Ruangan</h1>
+        <h1 class="text align-middle title barang">Peminjaman Barang</h1>
     </div>
-</nav>
-<br>
-
-<h1 class="text align-middle">Peminjaman Ruangan</h1>
-
-<section class="table">
-    <div class="table-responsive d-flex">
-        <table class="table table-hover m-5 text-center table-sm ps-5">
-            <thead class="table-primary tab-heading" style="--bs-table-bg: #635CA9;">
-                <tr>
-                <th scope="col">No</th>
-                <th scope="col">Nama Peminjam</th>
-                <th scope="col">Nama Ruangan</th>
-                <th scope="col">Tanggal Peminjaman</th>
-                <th scope="col">Waktu Mulai</th>
-                <th scope="col">Waktu Selesai</th>
-                <th scope="col">Penanggung Jawab</th>
-                <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody class="align-middle">
-                <tr>
-                <th scope="row">1</th>
-                <td>Ruang 1</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>
-                    <div class="status" >
-                        <img src="/img-2/Small.svg" alt="">
-                    </div>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Ruang 1</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>
-                    <div class="status">
-                        <img src="/img-2/Status belum derivifikasi (3).svg" alt="">
-                    </div>
-                </td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td>Ruang 1</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>
-                    <div class="status">
-                        <img src="/img-2/Ditolak (1).svg" alt="">
-                    </div>
-                </td>
-                </tr>
-            </tbody>
-        </table>
-      </div>
-</section>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary mx-5 float-end" data-bs-toggle="modal" data-bs-target="#exampleModal"  style="--bs-btn-padding-y: 10px; --bs-btn-font-size: 20px;">
-    <iconify-icon icon="ic:baseline-add"></iconify-icon>
-    &nbsp;
-    Pinjam Ruangan
-</button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Formulir Peminjaman</h1>        </div>
-        <div class="modal-body">
-            <div class="card-body">
-                <form>
-
-                    <!-- Dropdown -->
-                    <div class="form-outline mb-3">
-                        <label class="form-label" for="form7Example3">Nama Ruangan</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih ruangan</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Text input -->
-                    <div class="form-outline mb-3">
-                        <div class="form-outline mb-3">
-                            <label class="form-label" for="tanggalBooking">Tanggal Booking</label>
-                            <input type="text" id="tanggalBooking" class="form-control" placeholder="dd/mm/yyyy" />
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col">
-                            <div class="form-outline">
-                                <label class="form-label" for="startDate">start</label>
-                                <input type="text" id="startDate" class="form-control" placeholder="dd/mm/yyyy"/>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-outline">
-                                <label class="form-label" for="endDate">end</label>
-                                <input type="text" id="endDate" class="form-control" placeholder="dd/mm/yyyy"/>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="d-flex justify-content-center mt-4">
-                        <button type="button" class="btn btn-primary btn-lg btn-block"
-                        style="--bs-btn-padding-y: 10px;
-                        --bs-btn-padding-x: 40px; --bs-btn-font-size: 27px;"
-                        >
-                            Booking Sekarang
-                        </button>
-                    </div>
-                </form>
-            </div>    
+    
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="ruangan" checked>
+            <input type="radio" name="slide" id="barang">
+            <label for="ruangan" class="slide ruangan">Ruangan</label>
+            <label for="barang" class="slide barang">Barang</label>
+            <div class="slider-tab"></div>
         </div>
-      </div>
+        <div class="form-inner">
+            <section class="ruangan">
+                <section class="table">
+                    <div class="table-responsive d-flex">
+                        <table class="table table-hover m-5 text-center table-sm ps-5">
+                            <thead class="table-primary tab-heading" style="--bs-table-bg: #635CA9;">
+                                <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama Peminjam</th>
+                                <th scope="col">Nama Ruangan</th>
+                                <th scope="col">Tanggal Peminjaman</th>
+                                <th scope="col">Waktu Mulai</th>
+                                <th scope="col">Waktu Selesai</th>
+                                <th scope="col">Penanggung Jawab</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="align-middle">
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Ruang 1</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>
+                                    <div class="status" >
+                                        <img src="/img-2/Small.svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td>Ruang 1</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>
+                                    <div class="status">
+                                        <img src="/img-2/Status belum derivifikasi (3).svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td>Ruang 1</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>
+                                    <div class="status">
+                                        <img src="/img-2/Ditolak (1).svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                </section>
+                
+                <!-- Button trigger modal -->
+                <div class="field butn mb-4">
+                    <button type="button" class="btn btn-primary mx-5 float-end d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"  style="--bs-btn-padding-y: 10px; --bs-btn-font-size: 20px;">
+                        <iconify-icon icon="ic:baseline-add"></iconify-icon>
+                        &nbsp;
+                        Pinjam Ruangan
+                    </button>
+                </div>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Formulir Peminjaman</h1>        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <form>
+                
+                                    <!-- Dropdown -->
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label" for="form7Example3">Nama Ruangan</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih ruangan</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Text input -->
+                                    <div class="form-outline mb-3">
+                                        <div class="form-outline mb-3">
+                                            <label class="form-label" for="tanggalBooking">Tanggal Booking</label>
+                                            <input type="text" id="tanggalBooking" class="form-control" placeholder="dd/mm/yyyy" />
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="startDate">start</label>
+                                                <input type="text" id="startDate" class="form-control" placeholder="dd/mm/yyyy"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="endDate">end</label>
+                                                <input type="text" id="endDate" class="form-control" placeholder="dd/mm/yyyy"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                                        style="--bs-btn-padding-y: 10px;
+                                        --bs-btn-padding-x: 40px; --bs-btn-font-size: 27px;"
+                                        >
+                                            Booking Sekarang
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                      </div>
+                  </div>
+            </section>
+            <section class="barang">
+                <section class="table">
+                    <div class="table-responsive d-flex">
+                        <table class="table table-hover m-5 text-center table-sm ps-5">
+                            <thead class="table-primary tab-heading" style="--bs-table-bg: #635CA9;">
+                                <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama Peminjam</th>
+                                <th scope="col">Nama Ruangan</th>
+                                <th scope="col">Tanggal Peminjaman</th>
+                                <th scope="col">Waktu Mulai</th>
+                                <th scope="col">Waktu Selesai</th>
+                                <th scope="col">Penanggung Jawab</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="align-middle">
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Ruang 1</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>
+                                    <div class="status" >
+                                        <img src="/img-2/Small.svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td>Ruang 1</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>
+                                    <div class="status">
+                                        <img src="/img-2/Status belum derivifikasi (3).svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td>Ruang 1</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>
+                                    <div class="status">
+                                        <img src="/img-2/Ditolak (1).svg" alt="">
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                </section>
+                
+                <!-- Button trigger modal -->
+                <div class="field butn mb-4">
+                    <button type="button" class="btn btn-primary mx-5 float-end d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"  style="--bs-btn-padding-y: 10px; --bs-btn-font-size: 20px;">
+                        <iconify-icon icon="ic:baseline-add"></iconify-icon>
+                        &nbsp;
+                        Pinjam Barang
+                    </button>
+                </div>
+                
+                <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Formulir Peminjaman</h1>        </div>
+                        <div class="modal-body">
+                            <div class="card-body">
+                                <form>
+                
+                                    <!-- Dropdown -->
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label" for="form7Example3">Nama Ruangan</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih ruangan</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Text input -->
+                                    <div class="form-outline mb-3">
+                                        <div class="form-outline mb-3">
+                                            <label class="form-label" for="tanggalBooking">Tanggal Booking</label>
+                                            <input type="text" id="tanggalBooking" class="form-control" placeholder="dd/mm/yyyy" />
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="startDate">start</label>
+                                                <input type="text" id="startDate" class="form-control" placeholder="dd/mm/yyyy"/>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-outline">
+                                                <label class="form-label" for="endDate">end</label>
+                                                <input type="text" id="endDate" class="form-control" placeholder="dd/mm/yyyy"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                                        style="--bs-btn-padding-y: 10px;
+                                        --bs-btn-padding-x: 40px; --bs-btn-font-size: 27px;"
+                                        >
+                                            Booking Sekarang
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                      </div>
+                  </div>
+            </section>
+        </div>
     </div>
-  </div>
-
 </div>
+
     <script src="/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

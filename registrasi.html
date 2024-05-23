@@ -57,6 +57,22 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function myFunction(){
+            var eyeicon = document.getElementById ("eyeicon");
+            var password = document.getElementById ("password");
+        
+            if (password.type === "password"){
+                password.type = "text";
+                eyeicon.src = "./img-2/eye_open.png";
+            }
+            else{
+                password.type = "password";
+                eyeicon.src = "./img-2/eye_close.png";
+            }
+        }
+    </script>
 </body>
 
 </html>

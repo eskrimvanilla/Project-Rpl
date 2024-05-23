@@ -35,6 +35,7 @@ body {
     transform: translateX(0) scale(1.5); /* Zoom in the icon when clicked by increasing the scale */
 }
 
+
 /* nav */
 .navbar .tulisan {
     padding-left: 20px;
@@ -119,6 +120,7 @@ div {
     unicode-bidi: isolate;
 }
 
+
 /* button */
 .btn {
     background-color: #584CC8 !important;
@@ -173,4 +175,201 @@ label.form-label {
     justify-content: first baseline;
     width: 30px;
     height: 30px;
+}
+
+::selection{
+    background: #9295E0;
+    color: #fff;
+}
+
+.wrapper:not(.title){
+    display: grid;
+    /* place-items: center; */
+    overflow: hidden;
+    max-width: 1300px;
+    background: rgb(10,5,59);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper .title-text{
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .title{
+    width: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid lightsteelblue;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.slide-controls label.ruangan{
+    color: #000;
+}
+  
+.slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #aca8d9, #584CC8) !important;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55) !important;
+}
+
+input[type="radio"]{
+    display: none !important;
+}
+
+#barang:checked ~ .slider-tab{
+    left: 50% !important;
+}
+#barang:checked ~ label.barang{
+    color: #fff !important;
+    cursor: default;
+    user-select: none;
+}
+
+#login:checked ~ label.ruangan{
+    cursor: default;
+    user-select: none;
+}
+
+.wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-container .form-inner{
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-inner section:not(.table){
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.form-inner section .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner section .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.form-inner section .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus::placeholder{
+    color: #b3b3b3;
+}
+
+section .butn{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+section .butn .butn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #aca8d9, #584CC8, #aca8d9, #584CC8);
+    border-radius: 5px;
+    transition: all 0.4s ease;;
+}
+
+section .butn:hover .butn-layer{
+    left: 0;
+}
+
+section .butn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.butn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .butn .butn-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.butn .btn {
+    position: relative;
+    z-index: 2;
+} */
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    color: #fff !important;
+    background-color: #9295E0;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+    color: #fff !important;
+    background-color: #B5B7DE;
 }
